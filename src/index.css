@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+      font-family: 'avenir';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(/src/assets/avenir-font/AvenirLTStd-Heavy.otf) format('woff2');
+    }
+}

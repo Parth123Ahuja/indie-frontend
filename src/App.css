@@ -1,0 +1,58 @@
+#root {
+  /* max-width: 1280px; */
+  margin: 0;
+  /* padding: 2rem; */
+  text-align: left;
+}
+
+.underlineText {
+  position: relative;
+}
+
+.underlineText::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background: rgb(255, 255, 255);
+  transition: width 0.3s ease-in;
+}
+
+.underlineText-active::after {
+  width: 20%;
+}
+
+@media (max-width: 998px) {
+  .header-top {
+      font-size: 14px;
+  }
+
+  .flex-grow {
+      display: none;
+  }
+
+  .md\\:hidden {
+      display: flex;
+  }
+
+  .md\\:flex {
+      display: none;
+  }
+}
+
+@font-face {
+  font-family: avenir;
+  src: url(../src/assets/avenir-font/AvenirLTStd-Book.otf);
+}
+@font-face {
+  font-family: philosopher;
+  src: url(../src/assets/philosopher/Philosopher-Regular.ttf);
+}
+.philosopher{
+  font-family: philosopher;
+}
+.avenir{
+  font-family: avenir;
+}
